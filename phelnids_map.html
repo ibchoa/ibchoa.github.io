@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_552c05cc5189b13db1b912b97d630d0b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_552c05cc5189b13db1b912b97d630d0b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_552c05cc5189b13db1b912b97d630d0b = L.map(
+                "map_552c05cc5189b13db1b912b97d630d0b",
+                {
+                    center: [12.902743999446761, 122.4268386920845],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e479be529b42dc23bb471f8407084dfa = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var marker_58643dc5b507ae85788c722bc2152454 = L.marker(
+                [14.64726, 121.0473],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_0b795ddb5d42f49bdadaa6fc5181c9ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_58643dc5b507ae85788c722bc2152454.setIcon(icon_0b795ddb5d42f49bdadaa6fc5181c9ec);
+        
+    
+        var popup_2f6c4e6469b91ce1fbc5177a1e1f719b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c8932bfd416ff602ee481e3728cec52 = $(`<div id="html_9c8932bfd416ff602ee481e3728cec52" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> National Kidney And Transplant Institute<br>     <strong>Address:</strong> East Avenue, Quezon City<br>     <strong>Region:</strong> National Capital Region (NCR)<br>     <strong>Can Perform:</strong>  measles, diarrhea, cholera, hepatitis, rotavirus, typhoid, leptospirosis, dengue, schistosomiasis, filariasis, ames, sari, tb, covid <br>     </div>`)[0];
+                popup_2f6c4e6469b91ce1fbc5177a1e1f719b.setContent(html_9c8932bfd416ff602ee481e3728cec52);
+            
+        
+
+        marker_58643dc5b507ae85788c722bc2152454.bindPopup(popup_2f6c4e6469b91ce1fbc5177a1e1f719b)
+        ;
+
+        
+    
+    
+            var marker_fc9ce459f091d498468e0ae1e9e13a9a = L.marker(
+                [13.62304219172658, 123.19871138886148],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_5c72aefbbcba03a52c4cdc0992c6c936 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fc9ce459f091d498468e0ae1e9e13a9a.setIcon(icon_5c72aefbbcba03a52c4cdc0992c6c936);
+        
+    
+        var popup_7b7d19f5f68082165287b99c2409e4a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58714ea69c22ee081c6dd4637b918a22 = $(`<div id="html_58714ea69c22ee081c6dd4637b918a22" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Bicol Medical Center<br>     <strong>Address:</strong> 2Nd Floor Opd Building, Microbiology Laboratory, Bicol Medical Center, Concepcion Pequena, Naga City<br>     <strong>Region:</strong> Region V (Bicol Region)<br>     <strong>Can Perform:</strong>  diphtheria, diarrhea, cholera, hepatitis, chikungunya, dengue, schistosomiasis, filariasis, meningococcal, covid <br>     </div>`)[0];
+                popup_7b7d19f5f68082165287b99c2409e4a7.setContent(html_58714ea69c22ee081c6dd4637b918a22);
+            
+        
+
+        marker_fc9ce459f091d498468e0ae1e9e13a9a.bindPopup(popup_7b7d19f5f68082165287b99c2409e4a7)
+        ;
+
+        
+    
+    
+            var marker_3733d4894213f06293b4ee0e50f0557c = L.marker(
+                [11.294104258076432, 124.99319230628691],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_d33e1d6e14f3579e924a968e8a091e6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3733d4894213f06293b4ee0e50f0557c.setIcon(icon_d33e1d6e14f3579e924a968e8a091e6c);
+        
+    
+        var popup_d599be039e4e8c1f83aafb9daad5c0cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d89ba0984ec4128c61fc8d33ca4b71c2 = $(`<div id="html_d89ba0984ec4128c61fc8d33ca4b71c2" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Eastern Visayas Medical Center<br>     <strong>Address:</strong> Pan-National Highway, Daang Maharlika, Brgy. 93, Tacloban City<br>     <strong>Region:</strong> Region VIII (Eastern Visayas)<br>     <strong>Can Perform:</strong>  diarrhea, cholera, hepatitis, leptospirosis, dengue, schistosomiasis, filariasis, ames, meningococcal, covid <br>     </div>`)[0];
+                popup_d599be039e4e8c1f83aafb9daad5c0cb.setContent(html_d89ba0984ec4128c61fc8d33ca4b71c2);
+            
+        
+
+        marker_3733d4894213f06293b4ee0e50f0557c.bindPopup(popup_d599be039e4e8c1f83aafb9daad5c0cb)
+        ;
+
+        
+    
+    
+            var marker_5f4e1e96baaa9ab3fc4650a0851644eb = L.marker(
+                [10.30754, 123.89269],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_06f7883676dea95d89a994e1f8ce2baa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5f4e1e96baaa9ab3fc4650a0851644eb.setIcon(icon_06f7883676dea95d89a994e1f8ce2baa);
+        
+    
+        var popup_65dc850bfcd5cc80bf879216a22b3c77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_636422fdc0f965787c6a490f44a5a68f = $(`<div id="html_636422fdc0f965787c6a490f44a5a68f" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Vicente Sotto Memorial Medical Center<br>     <strong>Address:</strong> B. Rodriguez St., Sambag 2, Cebu City 6000<br>     <strong>Region:</strong> Region VII (Central Visayas)<br>     <strong>Can Perform:</strong>  diarrhea, cholera, hepatitis, chikungunya, dengue, zikavirus, ames, flu, sari, meningococcal, covid <br>     </div>`)[0];
+                popup_65dc850bfcd5cc80bf879216a22b3c77.setContent(html_636422fdc0f965787c6a490f44a5a68f);
+            
+        
+
+        marker_5f4e1e96baaa9ab3fc4650a0851644eb.bindPopup(popup_65dc850bfcd5cc80bf879216a22b3c77)
+        ;
+
+        
+    
+    
+            var marker_7348992f716de8a818f542cd06629b23 = L.marker(
+                [10.7184, 122.54209],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_205bc356a416b787641cbe231051562d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7348992f716de8a818f542cd06629b23.setIcon(icon_205bc356a416b787641cbe231051562d);
+        
+    
+        var popup_20c7f0618af6d7b4af88af9be52a3850 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98a0e27d45cc73733b76b1f79bf8712e = $(`<div id="html_98a0e27d45cc73733b76b1f79bf8712e" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Western Visayas Medical Center<br>     <strong>Address:</strong> Q. Abeto Street, Mandurriao, Iloilo City<br>     <strong>Region:</strong> Region VI (Western Visayas)<br>     <strong>Can Perform:</strong>  measles, diphtheria, diarrhea, cholera, hepatitis, rotavirus, leptospirosis, chikungunya, dengue, zikavirus, filariasis, aes, ames, tb, covid <br>     </div>`)[0];
+                popup_20c7f0618af6d7b4af88af9be52a3850.setContent(html_98a0e27d45cc73733b76b1f79bf8712e);
+            
+        
+
+        marker_7348992f716de8a818f542cd06629b23.bindPopup(popup_20c7f0618af6d7b4af88af9be52a3850)
+        ;
+
+        
+    
+    
+            var marker_0aca6ed4d112fc22f07e7b963b66cf18 = L.marker(
+                [6.91285, 122.08411],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_5a3ee7bd2d5899c8eb973ca43d024246 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0aca6ed4d112fc22f07e7b963b66cf18.setIcon(icon_5a3ee7bd2d5899c8eb973ca43d024246);
+        
+    
+        var popup_d19e46701df84fb0f5f020c26c8216e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33a1b11ef6e9d4b0083ec54e261108d7 = $(`<div id="html_33a1b11ef6e9d4b0083ec54e261108d7" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Zamboanga City Medical Center<br>     <strong>Address:</strong> Dr. Evangelista St. Sta. Catalina Zamboanga City<br>     <strong>Region:</strong> Region IX (Zamboanga Peninsula)<br>     <strong>Can Perform:</strong>  diarrhea, cholera, hepatitis, leptospirosis, dengue, schistosomiasis, filariasis, aes, ames, flu, sari, meningococcal, covid <br>     </div>`)[0];
+                popup_d19e46701df84fb0f5f020c26c8216e8.setContent(html_33a1b11ef6e9d4b0083ec54e261108d7);
+            
+        
+
+        marker_0aca6ed4d112fc22f07e7b963b66cf18.bindPopup(popup_d19e46701df84fb0f5f020c26c8216e8)
+        ;
+
+        
+    
+    
+            var marker_ba53210534180dba23647bd1b356d3fb = L.marker(
+                [14.615034864575945, 120.98105641578096],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_8aec87937ce43bf67df111d3d51c2b1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba53210534180dba23647bd1b356d3fb.setIcon(icon_8aec87937ce43bf67df111d3d51c2b1f);
+        
+    
+        var popup_22dfb6a093333c8d34098f6eab2e6572 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_553a182da268c6019c86c08570e5d1fe = $(`<div id="html_553a182da268c6019c86c08570e5d1fe" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> San Lazaro Hospital<br>     <strong>Address:</strong> Brgy. 331, Quiricada Street, Sta, Cruz, Manila<br>     <strong>Region:</strong> National Capital Region (NCR)<br>     <strong>Can Perform:</strong>  diphtheria, cholera, hepatitis, leptospirosis, chikungunya, dengue, schistosomiasis, filariasis, ames, flu, sari, meningococcal, tb, covid <br>     </div>`)[0];
+                popup_22dfb6a093333c8d34098f6eab2e6572.setContent(html_553a182da268c6019c86c08570e5d1fe);
+            
+        
+
+        marker_ba53210534180dba23647bd1b356d3fb.bindPopup(popup_22dfb6a093333c8d34098f6eab2e6572)
+        ;
+
+        
+    
+    
+            var marker_de84a71b6e6b1b1c807f6b5f03b33015 = L.marker(
+                [7.098564331748761, 125.62023386224756],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_c9bf78566bc545d9f2167422de117820 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_de84a71b6e6b1b1c807f6b5f03b33015.setIcon(icon_c9bf78566bc545d9f2167422de117820);
+        
+    
+        var popup_c07570bc37e1d1d3232b55dc4d3fb1e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0035b0a10e52b30e9b54b50770e3e28d = $(`<div id="html_0035b0a10e52b30e9b54b50770e3e28d" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Southern Philippines Medical Center<br>     <strong>Address:</strong> J.P. Laurel Ave., Bajada, Davao City 8000<br>     <strong>Region:</strong> Region XI (Davao Region)<br>     <strong>Can Perform:</strong>  measles, diarrhea, cholera, hepatitis, rotavirus, dengue, schistosomiasis, filariasis, ames, flu, sari, tb, covid <br>     </div>`)[0];
+                popup_c07570bc37e1d1d3232b55dc4d3fb1e0.setContent(html_0035b0a10e52b30e9b54b50770e3e28d);
+            
+        
+
+        marker_de84a71b6e6b1b1c807f6b5f03b33015.bindPopup(popup_c07570bc37e1d1d3232b55dc4d3fb1e0)
+        ;
+
+        
+    
+    
+            var marker_bb2c41a7072921d27eeb4eba5b6a55b5 = L.marker(
+                [9.06855, 126.19039],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_128f850c41cedd5920a213d1a3bb2675 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bb2c41a7072921d27eeb4eba5b6a55b5.setIcon(icon_128f850c41cedd5920a213d1a3bb2675);
+        
+    
+        var popup_7af5b2eef50e30b58c9e042a7fa7c1ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_214c4e8aefffd218c5b730996aac0c3a = $(`<div id="html_214c4e8aefffd218c5b730996aac0c3a" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Adela Serra Ty Memorial Medical Center<br>     <strong>Address:</strong> Capitol Hills, Telaje, Tandag City<br>     <strong>Region:</strong> Region XIII (Caraga)<br>     <strong>Can Perform:</strong>  diarrhea, cholera, hepatitis, typhoid, leptospirosis, chikungunya, dengue, schistosomiasis, ames, flu, sari, meningococcal, covid <br>     </div>`)[0];
+                popup_7af5b2eef50e30b58c9e042a7fa7c1ae.setContent(html_214c4e8aefffd218c5b730996aac0c3a);
+            
+        
+
+        marker_bb2c41a7072921d27eeb4eba5b6a55b5.bindPopup(popup_7af5b2eef50e30b58c9e042a7fa7c1ae)
+        ;
+
+        
+    
+    
+            var marker_faa1b25e1907b1933f424736020dae26 = L.marker(
+                [15.03449, 120.6845],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_9aca74410f44642f2d6c47a7bf5b04c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_faa1b25e1907b1933f424736020dae26.setIcon(icon_9aca74410f44642f2d6c47a7bf5b04c9);
+        
+    
+        var popup_5a2ccbf60c917b3bd6797009cb394851 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c38a83f508bcb009765d1df82559bc95 = $(`<div id="html_c38a83f508bcb009765d1df82559bc95" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Jose B. Lingad Memorial General Hospital<br>     <strong>Address:</strong> Mc Arthur Hiway, Barangay Dolores, City Of San Fernando Pampanga<br>     <strong>Region:</strong> Region III (Central Luzon)<br>     <strong>Can Perform:</strong>  measles, diarrhea, cholera, hepatitis, rotavirus, leptospirosis, dengue, aes, ames, meningococcal, covid <br>     </div>`)[0];
+                popup_5a2ccbf60c917b3bd6797009cb394851.setContent(html_c38a83f508bcb009765d1df82559bc95);
+            
+        
+
+        marker_faa1b25e1907b1933f424736020dae26.bindPopup(popup_5a2ccbf60c917b3bd6797009cb394851)
+        ;
+
+        
+    
+    
+            var marker_7e0cd469633f8210bc680295bd5e98ee = L.marker(
+                [16.98129897159805, 120.85385802614056],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_50702e930d918c8333d6f2d8ce7107ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7e0cd469633f8210bc680295bd5e98ee.setIcon(icon_50702e930d918c8333d6f2d8ce7107ec);
+        
+    
+        var popup_8d4fef62be8d42473e129e47e7263265 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f5e576e615c027b51744367d6883737 = $(`<div id="html_1f5e576e615c027b51744367d6883737" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Luis Hora Memorial Regional Hospital<br>     <strong>Address:</strong> Abatan, Bauko, Mountain Province <br>     <strong>Region:</strong> Cordillera Administrative Region (CAR)<br>     <strong>Can Perform:</strong>  diarrhea, cholera, hepatitis, leptospirosis, chikungunya, dengue, schistosomiasis, filariasis, aes, ames, meningococcal, covid <br>     </div>`)[0];
+                popup_8d4fef62be8d42473e129e47e7263265.setContent(html_1f5e576e615c027b51744367d6883737);
+            
+        
+
+        marker_7e0cd469633f8210bc680295bd5e98ee.bindPopup(popup_8d4fef62be8d42473e129e47e7263265)
+        ;
+
+        
+    
+    
+            var marker_9be80e73fd6634ab2166942c2c5f48e6 = L.marker(
+                [13.766989291784911, 123.03190261095276],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_7cb26cff5e4d8f6e683c178c693d44fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9be80e73fd6634ab2166942c2c5f48e6.setIcon(icon_7cb26cff5e4d8f6e683c178c693d44fa);
+        
+    
+        var popup_02057dfea6b9b79910b3987d24eeadad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48a08542d2d137fce0f9526ec1130629 = $(`<div id="html_48a08542d2d137fce0f9526ec1130629" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Bicol Region General Hospital And Geriatric Medical Center<br>     <strong>Address:</strong> San Pedro, Cabusao, Camarines Sur<br>     <strong>Region:</strong> Region V (Bicol Region)<br>     <strong>Can Perform:</strong>  measles, diphtheria, polio, diarrhea, cholera, hepatitis, dengue, schistosomiasis, filariasis, covid <br>     </div>`)[0];
+                popup_02057dfea6b9b79910b3987d24eeadad.setContent(html_48a08542d2d137fce0f9526ec1130629);
+            
+        
+
+        marker_9be80e73fd6634ab2166942c2c5f48e6.bindPopup(popup_02057dfea6b9b79910b3987d24eeadad)
+        ;
+
+        
+    
+    
+            var marker_2d67cb64f57384bf5d60892dddf39650 = L.marker(
+                [13.147288773034502, 123.7248116837481],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_ddba0182d932e9bcff554674fd0cd51a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2d67cb64f57384bf5d60892dddf39650.setIcon(icon_ddba0182d932e9bcff554674fd0cd51a);
+        
+    
+        var popup_91b4260bc40dea53cb5cf0729fa7f181 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb4ff64a5515a19e0d6e500557ec46a5 = $(`<div id="html_fb4ff64a5515a19e0d6e500557ec46a5" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Bicol Regional Hospital And Medical Center<br>     <strong>Address:</strong> Rizal Street, Sagpon, Daraga, Albay<br>     <strong>Region:</strong> Region V (Bicol Region)<br>     <strong>Can Perform:</strong>  diphtheria, diarrhea, cholera, hepatitis, dengue, filariasis, meningococcal, covid <br>     </div>`)[0];
+                popup_91b4260bc40dea53cb5cf0729fa7f181.setContent(html_fb4ff64a5515a19e0d6e500557ec46a5);
+            
+        
+
+        marker_2d67cb64f57384bf5d60892dddf39650.bindPopup(popup_91b4260bc40dea53cb5cf0729fa7f181)
+        ;
+
+        
+    
+    
+            var marker_6e06743dba54003604a9552557dbc8fe = L.marker(
+                [8.004650305210609, 124.28389666835264],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_bbd34250b6da0fb579bace813d0b23f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6e06743dba54003604a9552557dbc8fe.setIcon(icon_bbd34250b6da0fb579bace813d0b23f3);
+        
+    
+        var popup_5b5211f7eca996ef87c40f171a45216d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c106a5b846782daddc5f34035ed448f = $(`<div id="html_8c106a5b846782daddc5f34035ed448f" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Amai Pakpak Medical Center<br>     <strong>Address:</strong> Brgy Datu Saber, Marawi City, Lanao Del Sur<br>     <strong>Region:</strong> Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)<br>     <strong>Can Perform:</strong>  diarrhea, cholera, hepatitis, dengue, aes, ames, meningococcal, covid <br>     </div>`)[0];
+                popup_5b5211f7eca996ef87c40f171a45216d.setContent(html_8c106a5b846782daddc5f34035ed448f);
+            
+        
+
+        marker_6e06743dba54003604a9552557dbc8fe.bindPopup(popup_5b5211f7eca996ef87c40f171a45216d)
+        ;
+
+        
+    
+    
+            var marker_f69c6af6c2012d78a620ed4e759828bd = L.marker(
+                [17.68183, 121.79952],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_cc34f0ec21db1b390e8248efaa1b7e8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f69c6af6c2012d78a620ed4e759828bd.setIcon(icon_cc34f0ec21db1b390e8248efaa1b7e8c);
+        
+    
+        var popup_b6a021f81117939a00e210c92fb4a46b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3265e83c295bfaffa70e64cd57749339 = $(`<div id="html_3265e83c295bfaffa70e64cd57749339" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Cagayan Valley Medical Center<br>     <strong>Address:</strong> Dalan Na Pagayaya, Regional Government Center, Carig Sur, Tuguegarao City, Cagayan<br>     <strong>Region:</strong> Region II (Cagayan Valley)<br>     <strong>Can Perform:</strong>  measles, diarrhea, cholera, hepatitis, leptospirosis, dengue, schistosomiasis, filariasis, sari, meningococcal, covid <br>     </div>`)[0];
+                popup_b6a021f81117939a00e210c92fb4a46b.setContent(html_3265e83c295bfaffa70e64cd57749339);
+            
+        
+
+        marker_f69c6af6c2012d78a620ed4e759828bd.bindPopup(popup_b6a021f81117939a00e210c92fb4a46b)
+        ;
+
+        
+    
+    
+            var marker_c9dfb0e3b4f79d155c5d4634d78c03a2 = L.marker(
+                [14.647893508385325, 121.0411033377446],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_29067b1a418aef4dc13ef8b8be2936ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c9dfb0e3b4f79d155c5d4634d78c03a2.setIcon(icon_29067b1a418aef4dc13ef8b8be2936ee);
+        
+    
+        var popup_887262e13f667e106ae632138d81fe5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fad42b23bb6efea002bc9209f4890a6a = $(`<div id="html_fad42b23bb6efea002bc9209f4890a6a" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Philippine Children'S Medical Center<br>     <strong>Address:</strong> Corner Agham Road,Diliman Quezon City 1101, Metro Manila<br>     <strong>Region:</strong> National Capital Region (NCR)<br>     <strong>Can Perform:</strong>  measles, diphtheria, diarrhea, cholera, hepatitis, typhoid, dengue, schistosomiasis, flu, sari, meningococcal, covid <br>     </div>`)[0];
+                popup_887262e13f667e106ae632138d81fe5f.setContent(html_fad42b23bb6efea002bc9209f4890a6a);
+            
+        
+
+        marker_c9dfb0e3b4f79d155c5d4634d78c03a2.bindPopup(popup_887262e13f667e106ae632138d81fe5f)
+        ;
+
+        
+    
+    
+            var marker_6a3fc0f8adcf53e7168199063ed231ea = L.marker(
+                [8.170156690024845, 123.85799309718956],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_2f7246e38c8f0f1c0602698e8ca66aae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6a3fc0f8adcf53e7168199063ed231ea.setIcon(icon_2f7246e38c8f0f1c0602698e8ca66aae);
+        
+    
+        var popup_c9c5a948d5da5efe6150887aae147ca9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e3ce40547bc5cda6633458822235096 = $(`<div id="html_1e3ce40547bc5cda6633458822235096" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Mayor Hilarion A. Ramiro Sr Medical Center<br>     <strong>Address:</strong> P-Mindog, Maningcol, Ozamiz City<br>     <strong>Region:</strong> Region X (Northern Mindanao)<br>     <strong>Can Perform:</strong>  diarrhea, hepatitis, leptospirosis, dengue, schistosomiasis, filariasis, meningococcal, covid <br>     </div>`)[0];
+                popup_c9c5a948d5da5efe6150887aae147ca9.setContent(html_1e3ce40547bc5cda6633458822235096);
+            
+        
+
+        marker_6a3fc0f8adcf53e7168199063ed231ea.bindPopup(popup_c9c5a948d5da5efe6150887aae147ca9)
+        ;
+
+        
+    
+    
+            var marker_9ee577e9d060703ff0950668030bc621 = L.marker(
+                [10.672407068029631, 122.9510261818694],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_cbeadfd9f99a743f0bc98e1aaf907f01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ee577e9d060703ff0950668030bc621.setIcon(icon_cbeadfd9f99a743f0bc98e1aaf907f01);
+        
+    
+        var popup_7b56a098d9b54ba13552a4789726ef02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b462818db3a51f0049a25cee33ab0de = $(`<div id="html_2b462818db3a51f0049a25cee33ab0de" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Corazon Locsin Montelibano Memorial Regional Hospital<br>     <strong>Address:</strong> Cor. Lacson-Burgos Sts., Bacolod City, Negros Occidental <br>     <strong>Region:</strong> Region VI (Western Visayas)<br>     <strong>Can Perform:</strong>  diarrhea, cholera, leptospirosis, dengue, schistosomiasis, filariasis, meningococcal, covid <br>     </div>`)[0];
+                popup_7b56a098d9b54ba13552a4789726ef02.setContent(html_2b462818db3a51f0049a25cee33ab0de);
+            
+        
+
+        marker_9ee577e9d060703ff0950668030bc621.bindPopup(popup_7b56a098d9b54ba13552a4789726ef02)
+        ;
+
+        
+    
+    
+            var marker_964d04538193aa4d95c0eda5f9481596 = L.marker(
+                [14.64748, 121.04518],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_c0d6251172b284029afa7e3e1db18ecb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_964d04538193aa4d95c0eda5f9481596.setIcon(icon_c0d6251172b284029afa7e3e1db18ecb);
+        
+    
+        var popup_88bcf1b96983cb704423340f30d0e8cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_533c2860510119ed65493ccb110d03ad = $(`<div id="html_533c2860510119ed65493ccb110d03ad" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Lung Center Of The Philippines<br>     <strong>Address:</strong> Lung Center Of The Philippines, Quezon Ave., Quezon City<br>     <strong>Region:</strong> National Capital Region (NCR)<br>     <strong>Can Perform:</strong>  cholera, rotavirus, typhoid, dengue, schistosomiasis, filariasis, flu, sari, meningococcal, tb, covid <br>     </div>`)[0];
+                popup_88bcf1b96983cb704423340f30d0e8cb.setContent(html_533c2860510119ed65493ccb110d03ad);
+            
+        
+
+        marker_964d04538193aa4d95c0eda5f9481596.bindPopup(popup_88bcf1b96983cb704423340f30d0e8cb)
+        ;
+
+        
+    
+    
+            var marker_a2b23a302eb5b68242379484a638efb8 = L.marker(
+                [14.678841845896036, 120.53062141445524],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_bbfe6f626d31971f68b04a68b9bd887d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a2b23a302eb5b68242379484a638efb8.setIcon(icon_bbfe6f626d31971f68b04a68b9bd887d);
+        
+    
+        var popup_ca93a58e91c071b597be5bf6272f543d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_615a3b9172f39c89b7410cafb2c0d2e8 = $(`<div id="html_615a3b9172f39c89b7410cafb2c0d2e8" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Bataan Genral Hospital And Medical Center<br>     <strong>Address:</strong> Manahan St. Tenejero, Balanga City, Bataan<br>     <strong>Region:</strong> Region III (Central Luzon)<br>     <strong>Can Perform:</strong>  diphtheria, diarrhea, cholera, hepatitis, leptospirosis, dengue, meningococcal, covid <br>     </div>`)[0];
+                popup_ca93a58e91c071b597be5bf6272f543d.setContent(html_615a3b9172f39c89b7410cafb2c0d2e8);
+            
+        
+
+        marker_a2b23a302eb5b68242379484a638efb8.bindPopup(popup_ca93a58e91c071b597be5bf6272f543d)
+        ;
+
+        
+    
+    
+            var marker_c3bae9a772b809cef4279b31fcef4d25 = L.marker(
+                [18.060599887183933, 120.55915292431342],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_30ed5c52fd95795b18a889244ad21f0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c3bae9a772b809cef4279b31fcef4d25.setIcon(icon_30ed5c52fd95795b18a889244ad21f0b);
+        
+    
+        var popup_4a8cada0f230096bc075676f8a4acb90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56936f78cd53d3c29ac219a41496bf40 = $(`<div id="html_56936f78cd53d3c29ac219a41496bf40" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Mariano Marcos Memorial Hospital And Medical Center<br>     <strong>Address:</strong> Brgy. 6, San Julian, City Of Batac, Ilocos, Norte<br>     <strong>Region:</strong> Region I  (Ilocos Region)<br>     <strong>Can Perform:</strong>  measles, diphtheria, diarrhea, cholera, hepatitis, leptospirosis, chikungunya, dengue, schistosomiasis, filariasis, ames, meningococcal, covid <br>     </div>`)[0];
+                popup_4a8cada0f230096bc075676f8a4acb90.setContent(html_56936f78cd53d3c29ac219a41496bf40);
+            
+        
+
+        marker_c3bae9a772b809cef4279b31fcef4d25.bindPopup(popup_4a8cada0f230096bc075676f8a4acb90)
+        ;
+
+        
+    
+    
+            var marker_d7ea4e8b4d2475699d25cf0a60122f7c = L.marker(
+                [16.3933, 120.58575],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_2fe4dab0ae000086b8745f3c91ab761e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d7ea4e8b4d2475699d25cf0a60122f7c.setIcon(icon_2fe4dab0ae000086b8745f3c91ab761e);
+        
+    
+        var popup_c54a7b94750d47079fa62fa9a1d11314 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd32435dad342b9f008b2910a0b1d08f = $(`<div id="html_bd32435dad342b9f008b2910a0b1d08f" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Baguio General Hospital And Medical Center<br>     <strong>Address:</strong> 01 Governor Pack Road, Baguio City<br>     <strong>Region:</strong> Cordillera Administrative Region (CAR)<br>     <strong>Can Perform:</strong>  diarrhea, cholera, hepatitis, dengue, schistosomiasis, filariasis, sari, meningococcal, covid <br>     </div>`)[0];
+                popup_c54a7b94750d47079fa62fa9a1d11314.setContent(html_bd32435dad342b9f008b2910a0b1d08f);
+            
+        
+
+        marker_d7ea4e8b4d2475699d25cf0a60122f7c.bindPopup(popup_c54a7b94750d47079fa62fa9a1d11314)
+        ;
+
+        
+    
+    
+            var marker_4da0e5018e9939f2a2f9c8c3137e3d44 = L.marker(
+                [16.59054, 120.3182],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_5a77806d27f2d859a13353b47dae84e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4da0e5018e9939f2a2f9c8c3137e3d44.setIcon(icon_5a77806d27f2d859a13353b47dae84e4);
+        
+    
+        var popup_11c8f7fc1e763db35e6d9b3617a3d518 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d8836bb60f8eb203794e75ca4c4afdb = $(`<div id="html_4d8836bb60f8eb203794e75ca4c4afdb" style="width: 100.0%; height: 100.0%;">     <strong>Facility Name:</strong> Ilocos Training And Regional Medical Center<br>     <strong>Address:</strong> Mc Arthur Highway, Brgy. Parian, City Of San Fernando, 2500 La Union<br>     <strong>Region:</strong> Region I  (Ilocos Region)<br>     <strong>Can Perform:</strong>  diarrhea, cholera, hepatitis, leptospirosis, chikungunya, dengue, zikavirus, schistosomiasis, filariasis, ames, sari, meningococcal, tb, covid <br>     </div>`)[0];
+                popup_11c8f7fc1e763db35e6d9b3617a3d518.setContent(html_4d8836bb60f8eb203794e75ca4c4afdb);
+            
+        
+
+        marker_4da0e5018e9939f2a2f9c8c3137e3d44.bindPopup(popup_11c8f7fc1e763db35e6d9b3617a3d518)
+        ;
+
+        
+    
+    
+            var marker_aee24f7ecdb696ba7b512308ffcaac34 = L.marker(
+                [14.410256188071797, 121.03723239589962],
+                {}
+            ).addTo(map_552c05cc5189b13db1b912b97d630d0b);
+        
+    
+            var icon_4fab529f5321915d839d2bcd60ab26c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aee24f7ecdb696ba7b512308ffcaac34.setIcon(icon_4fab529f5321915d839d2bcd60ab26c8);
+        
+    
+        var popup_1d0b8dbdd0e079f23e3ec77ee79d6b43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6db54749a1ccb981d192776e4a6ddb24 = $(`<div id="html_6db54749a1ccb981d192776e4a6ddb24" style="width: 100.0%; height: 100.0%;"> <strong>Facility Name:</strong> RITM<br> <strong>Address:</strong> Research Institute for Tropical Medicine Address<br> </div>`)[0];
+                popup_1d0b8dbdd0e079f23e3ec77ee79d6b43.setContent(html_6db54749a1ccb981d192776e4a6ddb24);
+            
+        
+
+        marker_aee24f7ecdb696ba7b512308ffcaac34.bindPopup(popup_1d0b8dbdd0e079f23e3ec77ee79d6b43)
+        ;
+
+        
+    
+</script>
+</html>
